@@ -1,0 +1,87 @@
+[versions]
+
+gradle = "8.9.2"
+kotlin = "2.1.10"
+
+androidxActivityCompose = "1.10.1"
+androidxAppcompat = "1.7.0"
+androidxComposeBom = "2025.06.00"
+androidxComposeCompiler = "1.5.15"
+androidxCore = "1.16.0"
+androidxExif = "1.4.1"
+androidxLifecycle = "2.8.7"
+
+kotlinxSerializationJson = "1.8.0"
+
+androidxTestArchitecture = "2.2.0"
+androidxTestJUnit = "1.2.1"
+androidxTestTruth = "1.6.0"
+androidxTestRunner = "1.6.2"
+androidxTestEspresso = "3.6.1"
+androidxTestOrchestrator = "1.5.1"
+
+coroutines = "1.10.1"
+koin = "4.1.0-RC1"
+mockk = "1.14.2"
+robolectric = "4.15.1"
+startupRuntime = "1.2.0"
+
+
+[libraries]
+gradlePlugin = { group = "com.android.tools.build",name="gradle", version.ref = "gradle" }
+kotlin-reflect = {group = "org.jetbrains.kotlin",name="kotlin-reflect",version.ref = "kotlin"}
+
+androidx-activity-compose = {group = "androidx.activity",name="activity-compose",version.ref = "androidxActivityCompose"}
+androidx-appcompat = {group = "androidx.appcompat",name="appcompat",version.ref = "androidxAppcompat"}
+androidx-compose-bom = {group = "androidx.compose",name="compose-bom-alpha",version.ref = "androidxComposeBom"}
+androidx-compose-compiler = {group = "androidx.compose.compiler",name="compiler",version.ref = "androidxComposeCompiler"}
+androidx-compose-foundation = {module = "androidx.compose.foundation:foundation"}
+androidx-compose-material3 = {module = "androidx.compose.material3:material3"}
+androidx-compose-test-manifest = {module = "androidx.compose.ui:ui-test-manifest"}
+androidx-compose-tooling = {module = "androidx.compose.ui:ui-tooling"}
+androidx-compose-tooling-preview = {module = "androidx.compose.ui:ui-tooling-preview"}
+androidx-compose-material-icons = {module = "androidx.compose.material:material-icons-extended"}
+androidx-compose-ui-test-junit = {module = "androidx.compose.ui:ui-test-junit4"}
+
+androidx-exif = {group = "androidx.exifinterface",name="exifinterface",version.ref = "androidxExif"}
+androidx-core = {group = "androidx.core",name="core-ktx",version.ref = "androidxCore"}
+
+androidx-lifecycle-livedata = {group = "androidx.lifecycle",name="lifecycle-livedata-ktx",version.ref = "androidxLifecycle"}
+androidx-lifecycle-viewmodel = {group = "androidx.lifecycle",name="lifecycle-viewmodel-ktx",version.ref = "androidxLifecycle"}
+androidx-lifecycle-process = {group = "androidx.lifecycle",name="lifecycle-process",version.ref = "androidxLifecycle"}
+androidx-lifecycle-runtime-compose = {group = "androidx.lifecycle",name="lifecycle-runtime-compose",version.ref = "androidxLifecycle"}
+
+
+androidx-startup-runtime = { module = "androidx.startup:startup-runtime", version.ref = "startupRuntime" }
+
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+
+androidx-test-junit = {group = "androidx.test.ext",name="junit",version.ref = "androidxTestJUnit"}
+androidx-test-truth = {group = "androidx.test.ext",name="truth",version.ref = "androidxTestTruth"}
+androidx-test-runner = {group = "androidx.test",name="runner",version.ref = "androidxTestRunner"}
+androidx-test-architecture = {group = "androidx.arch.core",name="core-testing",version.ref = "androidxTestArchitecture"}
+androidx-test-orchestrator = { module = "androidx.test:orchestrator", version.ref = "androidxTestOrchestrator" }
+androidx-test-espresso = {group = "androidx.test.espresso",name="espresso-core",version.ref = "androidxTestEspresso"}
+robolectric = {group = "org.robolectric",name="robolectric",version.ref = "robolectric"}
+
+coroutines-core = {group = "org.jetbrains.kotlinx",name="kotlinx-coroutines-core",version.ref = "coroutines"}
+coroutines-android = {group = "org.jetbrains.kotlinx",name="kotlinx-coroutines-android",version.ref = "coroutines"}
+coroutines-test = {group = "org.jetbrains.kotlinx",name="kotlinx-coroutines-test",version.ref = "coroutines"}
+
+koin-core = {group = "io.insert-koin",name="koin-core",version.ref = "koin"}
+koin-android = {group = "io.insert-koin",name="koin-android",version.ref = "koin"}
+koin-android-compose = {group = "io.insert-koin",name="koin-androidx-compose",version.ref = "koin"}
+koin-navigation-extension = {group = "io.insert-koin",name="koin-androidx-navigation",version.ref = "koin"}
+
+koin-test = {group = "io.insert-koin",name="koin-test",version.ref = "koin"}
+koin-test-junit = {group = "io.insert-koin",name="koin-test-junit4",version.ref = "koin"}
+
+mockk = {group = "io.mockk",name="mockk",version.ref = "mockk"}
+[plugins]
+android-application = {id = "com.android.application", version.ref = "gradle"}
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id ="org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin"}
+
+
+
