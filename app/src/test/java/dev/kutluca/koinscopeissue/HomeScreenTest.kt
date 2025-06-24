@@ -6,7 +6,6 @@ import androidx.compose.ui.test.onNodeWithText
 import dev.kutluca.koinscopeissue.di.appModules
 import dev.kutluca.koinscopeissue.ui.home.HomeScreen
 import dev.kutluca.koinscopeissue.ui.home.HomeViewModel
-import org.junit.Assert.*
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -17,7 +16,7 @@ import org.robolectric.annotation.Config
 
 @RunWith(RobolectricTestRunner::class)
 @Config(instrumentedPackages = ["androidx.loader.content"], application = Application::class)
-class SomeTests : AutoCloseKoinTest() {
+class HomeScreenTest : AutoCloseKoinTest() {
     @get:Rule
     val rule = createComposeRule()
 
@@ -31,7 +30,7 @@ class SomeTests : AutoCloseKoinTest() {
         rule.onNodeWithText("View model number: 5").assertExists()
     }
 
-    // Either this or Main Activity test will fail, depending on the order of execution
+    // Either this or Main Activity test will fail,
     @Test
     fun `auto view model success`() {
         startKoin {
